@@ -6,7 +6,9 @@ export default function Footer() {
             <div className="grid md:grid-cols-4 gap-12">
 
                 <div className="space-y-4">
-                    <div className="font-bold text-2xl text-[var(--indian-saffron)]">BGS</div>
+                    <div className="font-bold text-2xl text-[var(--indian-saffron)]">
+                        <img src="/logo/image.png" alt="BGS Logo" className="h-12 w-auto" />
+                    </div>
                     <p className="text-gray-400 text-sm leading-relaxed">
                         Elevating Indian homes with premium, sustainable essentials.
                         Celebrating craftsmanship and modern living.
