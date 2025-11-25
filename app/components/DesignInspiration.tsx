@@ -13,7 +13,7 @@ export default function DesignInspiration() {
                 {/* Large featured story */}
                 <div className="group cursor-pointer">
                     <div className="aspect-[4/3] relative overflow-hidden rounded-xl">
-                        <img src={getImagePath('/pics/image copy 5.png')} alt="Sustainable Living at Home" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                        <img src={getImagePath('/pics/image copy 7.png')} alt="Minimalist Home" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
                     </div>
                     <p className="mt-4 font-semibold text-lg group-hover:text-blue-600 transition-colors">Minimalist Home Organization Guide</p>
                     <p className="text-gray-500 mt-2 text-sm">Discover the art of decluttering and creating a serene living space with our expert tips.</p>
@@ -22,13 +22,13 @@ export default function DesignInspiration() {
                 {/* Right small story list */}
                 <div className="flex flex-col gap-6">
                     {[
-                        { title: '5 Ways to Style Your Coffee Table', img: '/pics/image copy 6.png' },
-                        { title: 'Sustainable Materials 101', img: '/pics/image copy 5.png' },
-                        { title: 'Creating a Cozy Reading Nook', img: '/pics/image copy 3.png' }
+                        { title: '5 Ways to Style Your Coffee Table', img: getImagePath('/pics/image copy 6.png') },
+                        { title: 'Sustainable Materials 101', img: getImagePath('/pics/image copy 5.png') },
+                        { title: 'Creating a Cozy Reading Nook', img: getImagePath('/pics/image copy 3.png') }
                     ].map((item, i) => (
                         <div key={i} className="flex gap-4 group cursor-pointer">
                             <div className="aspect-square w-24 relative overflow-hidden rounded-xl bg-gray-100">
-                                <img src={getImagePath('/pics/image copy 6.png')} alt="5 Ways to Style Your Coffee Table" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                                <img src={item.img} alt={item.title} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
                             </div>
                             <div>
                                 <p className="font-medium group-hover:text-blue-600 transition-colors">{item.title}</p>
