@@ -1,4 +1,6 @@
 "use client";
+import { getImagePath } from '@/lib/basePath';
+
 export default function Footer() {
     return (
         <footer id="contact" className="px-6 lg:px-12 py-16 bg-[#1a1a1a] text-white border-t-4 border-[var(--indian-saffron)]">
@@ -7,7 +9,7 @@ export default function Footer() {
 
                 <div className="space-y-4">
                     <div className="font-bold text-2xl text-[var(--indian-saffron)]">
-                        <img src="/logo/image.png" alt="BGS Logo" className="h-12 w-auto" />
+                        <img src={getImagePath('/logo/image.png')} alt="BGS Logo" className="h-12 w-auto" />
                     </div>
                     <p className="text-gray-400 text-sm leading-relaxed">
                         Elevating Indian homes with premium, sustainable essentials.
@@ -55,7 +57,7 @@ export default function Footer() {
             <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
                 <p>© 2025 BGS Home Essentials. All Rights Reserved.</p>
                 <p className="flex items-center gap-1 mt-2 md:mt-0">
-                    Made with <span className="text-red-500">❤️</span> in India
+                    Made By Techbro24
                 </p>
             </div>
 

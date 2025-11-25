@@ -1,4 +1,6 @@
 "use client";
+import { getImagePath } from '@/lib/basePath';
+
 export default function CustomerReviews() {
     return (
         <section className="px-6 lg:px-12 py-16">
@@ -27,12 +29,12 @@ export default function CustomerReviews() {
 
                 {/* Middle Media */}
                 <div className="aspect-[4/3] relative overflow-hidden rounded-xl">
-                    <img src="/pics/image copy 2.png" alt="Kitchen Transformation" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
+                    <img src={getImagePath('/pics/image copy 2.png')} alt="Kitchen Transformation" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
                 </div>
 
                 {/* Right Media */}
                 <div className="aspect-[4/3] relative overflow-hidden rounded-xl">
-                    <img src="/pics/image copy 3.png" alt="Living Room Setup" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
+                    <img src={getImagePath('/pics/image copy 3.png')} alt="Living Room Setup" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
                 </div>
 
             </div>

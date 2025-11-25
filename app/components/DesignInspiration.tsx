@@ -1,5 +1,7 @@
 
 "use client";
+import { getImagePath } from '@/lib/basePath';
+
 export default function DesignInspiration() {
     return (
         <section id="journal" className="px-6 lg:px-12 py-16">
@@ -11,7 +13,7 @@ export default function DesignInspiration() {
                 {/* Large featured story */}
                 <div className="group cursor-pointer">
                     <div className="aspect-[4/3] relative overflow-hidden rounded-xl">
-                        <img src="/pics/image copy 7.png" alt="Minimalist Home" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                        <img src={getImagePath('/pics/image copy 5.png')} alt="Sustainable Living at Home" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
                     </div>
                     <p className="mt-4 font-semibold text-lg group-hover:text-blue-600 transition-colors">Minimalist Home Organization Guide</p>
                     <p className="text-gray-500 mt-2 text-sm">Discover the art of decluttering and creating a serene living space with our expert tips.</p>
@@ -26,7 +28,7 @@ export default function DesignInspiration() {
                     ].map((item, i) => (
                         <div key={i} className="flex gap-4 group cursor-pointer">
                             <div className="aspect-square w-24 relative overflow-hidden rounded-xl bg-gray-100">
-                                <img src={item.img} alt={item.title} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                                <img src={getImagePath('/pics/image copy 6.png')} alt="5 Ways to Style Your Coffee Table" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
                             </div>
                             <div>
                                 <p className="font-medium group-hover:text-blue-600 transition-colors">{item.title}</p>

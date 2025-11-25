@@ -1,5 +1,6 @@
 "use client";
 import SplitText from "./animation/SplitText";
+import { getImagePath } from '@/lib/basePath';
 export default function Hero() {
     return (
         <section className="px-6 lg:px-12 py-16 grid md:grid-cols-2 gap-12">
@@ -37,16 +38,16 @@ export default function Hero() {
             {/* Right Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="aspect-[3/4] mt-12 relative overflow-hidden rounded-xl">
-                    <img src="/pics/image.png" alt="Modern Living Room" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
+                    <img src={getImagePath('/pics/image.png')} alt="Modern Living Room" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="aspect-[3/3] relative overflow-hidden rounded-xl">
-                    <img src="/pics/image copy.png" alt="Elegant Decor" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
+                    <img src={getImagePath('/pics/image copy.png')} alt="Elegant Decor" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="aspect-[3/4] relative overflow-hidden rounded-xl">
-                    <img src="/pics/image copy 2.png" alt="Stylish Furniture" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
+                    <img src={getImagePath('/pics/image copy 2.png')} alt="Stylish Furniture" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="aspect-[3/3] relative overflow-hidden rounded-xl">
-                    <img src="/pics/image copy 3.png" alt="Cozy Corner" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
+                    <img src={getImagePath('/pics/image copy 3.png')} alt="Cozy Corner" className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
                 </div>
 
             </div>

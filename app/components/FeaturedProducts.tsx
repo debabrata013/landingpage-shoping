@@ -1,4 +1,6 @@
 "use client";
+import { getImagePath } from '@/lib/basePath';
+
 export default function FeaturedProducts() {
     return (
         <section id="shop" className="px-6 lg:px-12 py-12 bg-white">
@@ -14,14 +16,14 @@ export default function FeaturedProducts() {
 
             <div className="flex gap-6 mt-6 overflow-x-auto pb-4 scrollbar-hide">
                 {[
-                    { name: 'Modern Kitchen Set', category: 'Kitchen', img: '/pics/image copy 4.png', price: '₹2,999' },
-                    { name: 'Bamboo Storage', category: 'Storage', img: '/pics/image copy 8.png', price: '₹899' },
-                    { name: 'Eco Cleaning Kit', category: 'Cleaning', img: '/pics/image copy 5.png', price: '₹1,299' },
-                    { name: 'Ceramic Vases', category: 'Decor', img: '/pics/image copy 6.png', price: '₹1,499' },
-                    { name: 'Spice Jars Set', category: 'Kitchen', img: '/pics/image copy 4.png', price: '₹1,199' },
-                    { name: 'Cotton Throw', category: 'Decor', img: '/pics/image copy 3.png', price: '₹2,499' },
-                    { name: 'Brass Planter', category: 'Decor', img: '/pics/image copy.png', price: '₹3,299' },
-                    { name: 'Jute Rug', category: 'Decor', img: '/pics/image.png', price: '₹4,999' }
+                    { name: 'Modern Kitchen Set', category: 'Kitchen', img: getImagePath('/pics/image copy 4.png'), price: '₹2,999' },
+                    { name: 'Bamboo Storage', category: 'Storage', img: getImagePath('/pics/image copy 8.png'), price: '₹899' },
+                    { name: 'Eco Cleaning Kit', category: 'Cleaning', img: getImagePath('/pics/image copy 5.png'), price: '₹1,299' },
+                    { name: 'Ceramic Vases', category: 'Decor', img: getImagePath('/pics/image copy 6.png'), price: '₹1,499' },
+                    { name: 'Spice Jars Set', category: 'Kitchen', img: getImagePath('/pics/image copy 4.png'), price: '₹1,199' },
+                    { name: 'Cotton Throw', category: 'Decor', img: getImagePath('/pics/image copy 3.png'), price: '₹2,499' },
+                    { name: 'Brass Planter', category: 'Decor', img: getImagePath('/pics/image copy.png'), price: '₹3,299' },
+                    { name: 'Jute Rug', category: 'Decor', img: getImagePath('/pics/image.png'), price: '₹4,999' }
                 ].map((item, i) => (
                     <div key={i} className="min-w-[280px] group cursor-pointer">
                         <div className="aspect-[4/5] relative overflow-hidden rounded-xl bg-gray-100">

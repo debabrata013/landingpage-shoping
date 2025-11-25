@@ -1,11 +1,12 @@
 "use client";
+import { getImagePath } from '@/lib/basePath';
 
 export default function AboutBrand() {
     return (
         <section id="about" className="px-6 lg:px-12 py-20 flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
                 <div className="aspect-square relative overflow-hidden rounded-2xl">
-                    <img src="/pics/image copy 5.png" alt="About BGS" className="object-cover w-full h-full" />
+                    <img src={getImagePath('/pics/image copy 5.png')} alt="About BGS" className="object-cover w-full h-full" />
                 </div>
             </div>
             <div className="md:w-1/2">
